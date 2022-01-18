@@ -10,7 +10,7 @@ import AVKit
 
 struct VideoView: View {
     var video: Video
-    @State var player = AVPlayer()
+    @State private var player = AVPlayer()
 
     var body: some View {
         VideoPlayer(player: player)
