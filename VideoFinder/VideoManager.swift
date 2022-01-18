@@ -69,7 +69,7 @@ class VideoManager: ObservableObject {
 
         } catch {
             // If we run into an error, print the error in the console
-            print("Error fetchig data from Pexels: \(error)")
+            print("Error fetching data from Pexels: \(error)")
         }
     }
 }
