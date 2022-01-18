@@ -13,7 +13,7 @@ struct VideoCard: View {
     var body: some View {
         ZStack {
             ZStack(alignment: .bottomLeading) {
-                AsyncImage(url: URL(string: "")) { image in
+                AsyncImage(url: URL(string: video.image)) { image in
                     image.resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 160, height: 250)
