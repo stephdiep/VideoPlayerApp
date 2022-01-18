@@ -11,6 +11,12 @@
 		225F73972797135300C9C2FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225F73962797135300C9C2FF /* ContentView.swift */; };
 		225F73992797135400C9C2FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 225F73982797135400C9C2FF /* Assets.xcassets */; };
 		225F739C2797135400C9C2FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 225F739B2797135400C9C2FF /* Preview Assets.xcassets */; };
+		225F73A327971E4900C9C2FF /* VideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225F73A227971E4900C9C2FF /* VideoManager.swift */; };
+		225F73A6279726DD00C9C2FF /* VideoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225F73A5279726DD00C9C2FF /* VideoCard.swift */; };
+		225F73A82797279000C9C2FF /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225F73A72797279000C9C2FF /* ModelData.swift */; };
+		225F73AA279727BB00C9C2FF /* videoData.json in Resources */ = {isa = PBXBuildFile; fileRef = 225F73A9279727BB00C9C2FF /* videoData.json */; };
+		22D70ECE27972C6B00C0BB88 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D70ECD27972C6B00C0BB88 /* VideoView.swift */; };
+		22D70ED027972FE800C0BB88 /* QueryTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D70ECF27972FE800C0BB88 /* QueryTag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		225F73962797135300C9C2FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		225F73982797135400C9C2FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		225F739B2797135400C9C2FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		225F73A227971E4900C9C2FF /* VideoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoManager.swift; sourceTree = "<group>"; };
+		225F73A5279726DD00C9C2FF /* VideoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCard.swift; sourceTree = "<group>"; };
+		225F73A72797279000C9C2FF /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		225F73A9279727BB00C9C2FF /* videoData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = videoData.json; sourceTree = "<group>"; };
+		22D70ECD27972C6B00C0BB88 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		22D70ECF27972FE800C0BB88 /* QueryTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryTag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				225F73942797135300C9C2FF /* VideoFinderApp.swift */,
-				225F73962797135300C9C2FF /* ContentView.swift */,
+				225F73A227971E4900C9C2FF /* VideoManager.swift */,
+				22D70ECC27972C5E00C0BB88 /* Views */,
+				225F73A4279726D200C9C2FF /* Components */,
 				225F73982797135400C9C2FF /* Assets.xcassets */,
 				225F739A2797135400C9C2FF /* Preview Content */,
 			);
@@ -62,9 +76,29 @@
 		225F739A2797135400C9C2FF /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				225F73A72797279000C9C2FF /* ModelData.swift */,
+				225F73A9279727BB00C9C2FF /* videoData.json */,
 				225F739B2797135400C9C2FF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		225F73A4279726D200C9C2FF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				225F73A5279726DD00C9C2FF /* VideoCard.swift */,
+				22D70ECF27972FE800C0BB88 /* QueryTag.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		22D70ECC27972C5E00C0BB88 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				225F73962797135300C9C2FF /* ContentView.swift */,
+				22D70ECD27972C6B00C0BB88 /* VideoView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +161,7 @@
 			files = (
 				225F739C2797135400C9C2FF /* Preview Assets.xcassets in Resources */,
 				225F73992797135400C9C2FF /* Assets.xcassets in Resources */,
+				225F73AA279727BB00C9C2FF /* videoData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +172,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D70ECE27972C6B00C0BB88 /* VideoView.swift in Sources */,
 				225F73972797135300C9C2FF /* ContentView.swift in Sources */,
 				225F73952797135300C9C2FF /* VideoFinderApp.swift in Sources */,
+				225F73A82797279000C9C2FF /* ModelData.swift in Sources */,
+				22D70ED027972FE800C0BB88 /* QueryTag.swift in Sources */,
+				225F73A327971E4900C9C2FF /* VideoManager.swift in Sources */,
+				225F73A6279726DD00C9C2FF /* VideoCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
