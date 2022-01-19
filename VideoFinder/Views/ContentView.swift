@@ -45,7 +45,6 @@ struct ContentView: View {
             .background(Color("AccentColor"))
             .navigationBarHidden(true)
         }
-        .navigationViewStyle(.stack)
     }
 }
 
