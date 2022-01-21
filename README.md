@@ -2,7 +2,7 @@
 <h1 align="center">
   📺 VideoPlayerApp tutorial
 </h1>
-Source code for the VideoPlayerApp built in the <a href="">YouTube tutorial</a>
+Source code for the VideoPlayerApp built in the <a href="https://youtu.be/9TwO9yMsPRg">YouTube tutorial</a>
 
 Access the three-part written content here:
 - [Video app Part 1](https://designcode.io/swiftui-advanced-handbook-video-app-1)
